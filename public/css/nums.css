@@ -1,0 +1,76 @@
+form {
+  text-align: center;
+}
+
+form h3 {
+  margin-top: 20px;
+}
+
+form label {
+  white-space: nowrap;
+}
+
+form>:not(h3) {
+  display: inline-block;
+  margin: 8px;
+}
+
+form input {
+  text-align: right;
+}
+
+form ::-webkit-outer-spin-button,
+form ::-webkit-inner-spin-button {
+  margin-left: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+tr:not(:hover) span {
+  visibility: hidden;
+}
+
+tr {
+  height: 30px;
+}
+
+td {
+  position: relative;
+}
+
+
+main a {
+  display: block;
+  text-align: center;
+}
+
+@media (hover: hover) {
+  thead {
+    display: none;
+  }
+}
+
+@media (hover: none) {
+  tr span {
+    display: none;
+  }
+
+  tr:nth-child(even) {
+    background: #9441;
+  }
+
+  td {
+    text-align: center;
+  }
+}
+
+@media (min-width: 650px) {
+  tr:first-child:not(:hover)>td:nth-child(2)::after {
+    content: "последнее: ";
+    position: absolute;
+    left: 0;
+  }
+}

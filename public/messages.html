@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/mb.css">
+  <script src="js/messages.js" defer></script>
+
+  <title>Доска объявлений</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">О себе</a></li>
+          <li><a href="numbers">Средние числа</a></li>
+          <li>
+            <a href="https://github.com/natalishaWow/test_w">
+              Репозиторий на GitHub
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <form id="messageForm">
+          <h4>Добавить сообщение</h4>
+          <label>
+            Текст: <textarea name="text" rows="4"></textarea>
+          </label>
+          <label>
+            Автор: <input name="author">
+          </label>
+          <button>разместить сообщение</button>
+        </form>
+
+        <h1>Доска сообщений</h1>
+
+        <ul id="messages">%PAGE_CONTENT%</ul>
+      </div>
+    </main>
+  </div>
+</body>
+
+</html>

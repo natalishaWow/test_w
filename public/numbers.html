@@ -1,0 +1,64 @@
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/nums.css">
+  <script src="js/nums.js" defer=""></script>
+
+  <title>Средние числа</title>
+</head>
+
+<body>
+  <div id="wrapper">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">О себе</a></li>
+          <li><a href="messages">Доска сообщений</a></li>
+          <li>
+            <a href="https://github.com/natalishaWow/test_w">
+              Репозиторий на GitHub
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <form action="/api/average" method="POST" id="averageForm">
+          <h3>Рассчитать среднее число</h3>
+
+          <label>
+            <input name="number" type="number" step="any" placeholder="следующее число">
+          </label>
+          <label>
+            <input name="negative" type="checkbox"> отрицательное
+          </label>
+          <label>
+            <input name="float" type="checkbox"> дробное
+          </label>
+
+          <button>отправить и получить среднее</button>
+        </form>
+
+        <h2>История вычислений средних чисел</h2>
+
+        <table>
+          <thead>
+            <tr><th>прошлое</th>
+            <th>очередное</th>
+            <th>среднее</th>
+          </tr></thead>
+          <tbody id="tableBody">
+          </tbody>
+        </table>
+        <a href="/api/numbers">👁️</a>
+      </div>
+    </main>
+  </div>
+
+
+
+</body></html>

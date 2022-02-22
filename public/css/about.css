@@ -1,0 +1,10 @@
+body {
+  overflow-x: hidden;
+}
+
+img {
+  float: right;
+  margin-left: 10px;
+  width: 50%;
+  max-width: 300px;
+}

@@ -1,0 +1,72 @@
+body {
+  overflow-x: hidden;
+}
+
+form h4 {
+  margin-top: 20px;
+  text-align: center;
+}
+
+form label {
+  display: inline-flex;
+  align-items: center;
+}
+
+form>* {
+  margin: 4px;
+}
+
+form textarea {
+  padding: 5px 10px;
+  resize: none;
+  width: calc(min(98vw, 1200px) - 115px);
+  margin-left: 5px;
+}
+
+form input {
+  padding-left: 10px;
+  width: calc(min(98vw, 1200px) - 400px);
+  min-width: 200px;
+  margin-left: 5px;
+}
+
+form button {
+  float: right;
+  margin-right: 1.2vw;
+}
+
+.message {
+  border-radius: 2vw 1vw 2vw 2vw;
+  border: 2px solid #630;
+  margin-bottom: 12px;
+  padding: 0 15px;
+  position: relative;
+}
+
+.message .cross {
+  position: absolute;
+  background: none;
+  border: none;
+  font-size: 25px;
+  color: red;
+  right: 6px;
+  top: 0;
+  transition: 0.5s;
+}
+.message .cross:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+.info-row {
+  display: flex;
+  justify-content: flex-end;
+  gap: 0 40px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.info-row>* {
+  margin: 0 10px 10px;
+  white-space: nowrap;
+}
